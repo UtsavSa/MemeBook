@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel = "stylesheet" href = "style2.css">
+
+    <title>MemeBook</title>
+</head>
+<body>
+
+
+
+    <!-- container for the whole thing-->
+
+    <div class = "scroll-container">
+
+        <div class = "searchMemes">
+            <h2 class = "meme-genre"> Genre </h2>
+
+            <select id = "genreSelect">
+                <option value = "wholesomememes"> Wholesome Memes </option>
+                <option value = "dankmemes"> Dank Memes</option>
+                <option value = "me_irl"> Me IRL</option>
+                <option value = "physicsmemes">Physics Memes</option>
+                <option value = "AdviceAnimals">Advice Animals</option>
+                <option value = "MemeEconomy">Meme Economy</option>
+                <option value = "PewdiepieSubmissions">PewDiePie Submissions</option>
+                <option value = "funny">Funny</option>
+                <option value = "teenagers">Teenagers</option>
+                <option value = "FortniteMemes">Fortnite Memes</option>
+
+
+            </select>
+
+            <button id = "fetchMemesBtn">Search Memes</button>
+            </div>
+
+
+            
+
+        </div>
+
+        <div class = "memes-scroll-container">
+
+            
+            <div class="meme-item">
+                <img src="${data.url}" alt="${data.title}">
+                <h3>${data.title}</h3>
+                <p>Meme By: ${data.author}</p>
+                <div class = "meme-buttons">
+                    <button class = "like-button">Like</button>
+                    <a href = "${data.url}" download = "${data.title}.jpg" class = "download-button">Download</a>
+                </div>
+            </div>
+                
+
+        </div>
+
+        
+
+
+
+    </div>
+    <button id = "goToPage1Btn">Page 1</button>
+
+    
+    
+
+
+    <script src = "script2.js"></script>
+</body>
+</html>

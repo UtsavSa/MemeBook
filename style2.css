@@ -1,0 +1,190 @@
+
+
+
+body{
+
+    font-family:Georgia, 'Times New Roman', Times, serif;
+   
+    background: linear-gradient(to right, #5032a1, #8c3bce);
+
+    
+   
+   
+    
+
+
+}
+
+.scroll-container{
+    display: flex;
+    flex-direction: column;
+    
+    
+}
+
+#goToPage1Btn{
+
+    padding:10px 20px;
+    margin-top: 20px;
+    background-color: #4CAF50;
+    border: 2px solid #71b61d;
+    color: #d8ee0e;
+    transition: background-color 0.3s;
+
+}
+
+.memes-scroll-container{
+
+    
+   
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    max-width: 1000px;  
+    border: 2px solid #d8ee0e;
+    
+    padding: 20px 0;
+    width: 70%;
+    height: 600px;
+    overflow-y: auto;
+    margin: 0 auto;
+
+
+}
+.meme-item{
+    
+    text-align: center;
+    max-width: 100%;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    position: relative; 
+
+
+}
+.meme-item.active{
+    display: block;
+}
+
+.meme-item img{
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+}
+
+.meme-item h3{
+    font-size: 18px;
+    margin: 10px 0;
+
+}
+
+.meme-item p{
+    font-size: 14px;
+}
+
+
+.searchMemes{
+
+    display: flex;
+    align-items: center;
+    
+    
+
+
+}
+
+
+.searchMemes .meme-genre{
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #d8ee0e;
+}
+
+.searchMemes #genreSelect{
+
+    padding: 8px;
+    font-size: 16px;
+    background-color: #8c3bce;
+    border: 2px solid #5032a1;
+    color: #d8ee0e;
+    margin-left: 3vh;
+
+
+}
+
+#fetchMemesBtn {
+
+    padding: 10px 20px;
+    background-color: #71b61d;
+    border: 2px solid #71b61d;
+    color: #d8ee0e;
+    font-size: 16px;
+    cursor: pointer;
+    margin-left: 3vh;
+    
+    transition: background-color 0.3s;
+
+}
+
+#fetchMemesBtn:hover{
+    background-color: #5032a1;
+}
+
+.meme-buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    width: 100%;
+
+   position: absolute;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+
+
+}
+
+.like-button {
+
+    padding: 5px 10px;
+    border: 1px solid #d8ee0e;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: #d8ee0e;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    
+    
+
+
+}
+
+.download-button {
+    background-color: #4CAF50;
+    color: #d8ee0e;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #d8ee0e;
+    border-radius: 5px;
+    position: absolute;
+    top: 10px;
+    right: 30px;
+   
+}
+.meme-item .meme-buttons{
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+
+
